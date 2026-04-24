@@ -26,11 +26,11 @@ Feature: Evaluator fractional operator
     @fractional-v2
     Examples: v2
       | name  | value    |
-      | jack  | hearts   |
-      | queen | spades   |
+      | jack  | diamonds |
+      | queen | diamonds |
       | ten   | clubs    |
-      | nine  | diamonds |
-      | 3     | clubs    |
+      | nine  | clubs    |
+      | 3     | spades   |
 
   Scenario Outline: Fractional operator shorthand
     Given a String-flag with key "fractional-flag-shorthand" and a fallback value "fallback"
@@ -68,9 +68,9 @@ Feature: Evaluator fractional operator
     Examples: v2
       | name  | value    |
       | seven | hearts   |
-      | eight | diamonds |
-      | nine  | clubs    |
-      | two   | spades   |
+      | eight | hearts   |
+      | nine  | diamonds |
+      | two   | diamonds |
 
   Scenario Outline: Second fractional operator with shared seed
     Given a String-flag with key "fractional-flag-B-shared-seed" and a fallback value "fallback"
@@ -90,9 +90,9 @@ Feature: Evaluator fractional operator
     Examples: v2
       | name  | value           |
       | seven | ace-of-hearts   |
-      | eight | ace-of-diamonds |
-      | nine  | ace-of-clubs    |
-      | two   | ace-of-spades   |
+      | eight | ace-of-hearts   |
+      | nine  | ace-of-diamonds |
+      | two   | ace-of-diamonds |
 
   # Hash edge-case vectors — keys chosen by brute-force search so their
   # MurmurHash3-x86-32 (seed=0) falls at the six critical boundary values.
