@@ -26,6 +26,15 @@ Feature: Evaluator fractional operator
     @fractional-v2
     Examples: v2
       | name  | value    |
+      | jack  | hearts   |
+      | queen | spades   |
+      | ten   | clubs    |
+      | nine  | diamonds |
+      | 3     | clubs    |
+
+    @fractional-v3
+    Examples: v3
+      | name  | value    |
       | jack  | diamonds |
       | queen | diamonds |
       | ten   | clubs    |
@@ -68,6 +77,14 @@ Feature: Evaluator fractional operator
     Examples: v2
       | name  | value    |
       | seven | hearts   |
+      | eight | diamonds |
+      | nine  | clubs    |
+      | two   | spades   |
+
+    @fractional-v3
+    Examples: v3
+      | name  | value    |
+      | seven | hearts   |
       | eight | hearts   |
       | nine  | diamonds |
       | two   | diamonds |
@@ -88,6 +105,14 @@ Feature: Evaluator fractional operator
 
     @fractional-v2
     Examples: v2
+      | name  | value           |
+      | seven | ace-of-hearts   |
+      | eight | ace-of-diamonds |
+      | nine  | ace-of-clubs    |
+      | two   | ace-of-spades   |
+
+    @fractional-v3
+    Examples: v3
       | name  | value           |
       | seven | ace-of-hearts   |
       | eight | ace-of-hearts   |
