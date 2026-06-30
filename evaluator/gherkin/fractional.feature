@@ -226,7 +226,6 @@ Feature: Evaluator fractional operator
     And a String-flag with key "fractional-null-bucket-key-flag" and a fallback value "wrong"
     When the flag was evaluated with details
     Then the resolved details value should be "fallback"
-<<<<<<< Updated upstream
     And the reason should be "DEFAULT"
 
   # Follow-up error scenarios from https://github.com/open-feature/flagd/issues/1874
@@ -248,7 +247,6 @@ Feature: Evaluator fractional operator
     And a context containing a targeting key with value "any-user"
     When the flag was evaluated with details
     Then the resolved details value should be "two"
-=======
 
   @fractional-v3
   Scenario Outline: Fractional operator with basic types
@@ -485,4 +483,3 @@ Feature: Evaluator fractional operator
       | non-string-variant-targeting-flag | 2     |             |
       | empty-targeting-flag              | 1     |             |
       | targeting-null-flag               | 3     | GENERAL     |
->>>>>>> Stashed changes
