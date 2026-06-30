@@ -1,5 +1,49 @@
 # Changelog
 
+## [3.8.0](https://github.com/open-feature/flagd-testbed/compare/v3.7.0...v3.8.0) (2026-06-01)
+
+
+### ✨ New Features
+
+* add disabled flag evaluation test scenarios ([#376](https://github.com/open-feature/flagd-testbed/issues/376)) ([b771775](https://github.com/open-feature/flagd-testbed/commit/b771775114f2ef35a571239e1294faeeb8aebf5e))
+
+## [3.7.0](https://github.com/open-feature/flagd-testbed/compare/v3.6.2...v3.7.0) (2026-04-30)
+
+
+### ✨ New Features
+
+* latest flagd ([#372](https://github.com/open-feature/flagd-testbed/issues/372)) ([4b325bb](https://github.com/open-feature/flagd-testbed/commit/4b325bb0e2fef9095c12fcef7863d0d7578637bb))
+
+## [3.6.2](https://github.com/open-feature/flagd-testbed/compare/v3.6.1...v3.6.2) (2026-04-21)
+
+
+### 🐛 Bug Fixes
+
+* add single fractional tag ([2bc2a98](https://github.com/open-feature/flagd-testbed/commit/2bc2a9822773bdd2345116bd85c342e788445f38))
+
+## [3.6.1](https://github.com/open-feature/flagd-testbed/compare/v3.6.0...v3.6.1) (2026-04-20)
+
+
+### 🐛 Bug Fixes
+
+* remove if-wrappers from error flags ([#369](https://github.com/open-feature/flagd-testbed/issues/369)) ([e40714e](https://github.com/open-feature/flagd-testbed/commit/e40714ed3a265affc087865357ca56994afb1fd1))
+
+## [3.6.0](https://github.com/open-feature/flagd-testbed/compare/v3.5.0...v3.6.0) (2026-04-13)
+
+
+### 🐛 Bug Fixes
+
+* add context to single-entry frc ([484ada4](https://github.com/open-feature/flagd-testbed/commit/484ada4dd979f663214c024f3cb601141328a1b5))
+* add missing context step to single-entry fractional case ([#364](https://github.com/open-feature/flagd-testbed/issues/364)) ([f469a7c](https://github.com/open-feature/flagd-testbed/commit/f469a7c0c11d677142e5a30f2005812bd30c3fba))
+* add testcase with fractional with single entry ([#362](https://github.com/open-feature/flagd-testbed/issues/362)) ([13e1e5b](https://github.com/open-feature/flagd-testbed/commit/13e1e5b7afe6baf121883abdb4c8081a94537eb2))
+
+
+### ✨ New Features
+
+* add PARSE_ERROR and whitespace tests for evaluator ref ([#361](https://github.com/open-feature/flagd-testbed/issues/361)) ([0707f4b](https://github.com/open-feature/flagd-testbed/commit/0707f4bb026bda52f5bba96461dd6e9cb16e359b))
+* **operators:** add follow-up error scenarios for operator null-return behaviour ([#356](https://github.com/open-feature/flagd-testbed/issues/356)) ([0815d19](https://github.com/open-feature/flagd-testbed/commit/0815d197ae0de06b96af3efdc08ea9596f0b21fc))
+* **semver:** add edge case scenarios for v-prefix, partial versions, and build metadata ([#341](https://github.com/open-feature/flagd-testbed/issues/341)) ([31afd6e](https://github.com/open-feature/flagd-testbed/commit/31afd6eb4f0dee9e242ed65a6080904ee139acbd))
+
 ## [3.5.0](https://github.com/open-feature/flagd-testbed/compare/v3.4.0...v3.5.0) (2026-04-01)
 
 

@@ -23,6 +23,19 @@
         ]
       }
     },
+    "fractional-single-entry-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "single": "single",
+        "fallback": "fallback"
+      },
+      "defaultVariant": "fallback",
+      "targeting": {
+        "fractional": [
+          [ "single", 1 ]
+        ]
+      }
+    },
     "fractional-flag-shorthand": {
       "state": "ENABLED",
       "variants": {
@@ -297,6 +310,62 @@
               "major", "none"
             ]
           }
+        ]
+      }
+    },
+    "semver-v-prefix-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "match": "match",
+        "no-match": "no-match"
+      },
+      "defaultVariant": "no-match",
+      "targeting": {
+        "if": [
+          {"sem_ver": [{"var": "version"}, "=", "v1.0.0"]},
+          "match", "no-match"
+        ]
+      }
+    },
+    "semver-partial-version-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "match": "match",
+        "no-match": "no-match"
+      },
+      "defaultVariant": "no-match",
+      "targeting": {
+        "if": [
+          {"sem_ver": [{"var": "version"}, "^", "1"]},
+          "match", "no-match"
+        ]
+      }
+    },
+    "semver-numeric-context-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "match": "match",
+        "no-match": "no-match"
+      },
+      "defaultVariant": "no-match",
+      "targeting": {
+        "if": [
+          {"sem_ver": [{"var": "version"}, ">", "1.1"]},
+          "match", "no-match"
+        ]
+      }
+    },
+    "semver-build-metadata-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "match": "match",
+        "no-match": "no-match"
+      },
+      "defaultVariant": "no-match",
+      "targeting": {
+        "if": [
+          {"sem_ver": [{"var": "version"}, "=", "1.0.0+build"]},
+          "match", "no-match"
         ]
       }
     }
