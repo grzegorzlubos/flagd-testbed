@@ -699,6 +699,135 @@
         }
       },
       "defaultVariant": "template"
+    },
+    "fractional-basic-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "bucket1": "bucket1",
+        "bucket2": "bucket2",
+        "bucket3": "bucket3",
+        "bucket4": "bucket4",
+        "bucket5": "bucket5",
+        "bucket6": "bucket6",
+        "bucket7": "bucket7",
+        "bucket8": "bucket8",
+        "bucket9": "bucket9",
+        "bucket10": "bucket10",
+        "bucket11": "bucket11",
+        "bucket12": "bucket12",
+        "bucket13": "bucket13",
+        "bucket14": "bucket14",
+        "bucket15": "bucket15",
+        "bucket16": "bucket16",
+        "bucket17": "bucket17",
+        "bucket18": "bucket18",
+        "bucket19": "bucket19",
+        "bucket20": "bucket20",
+        "bucket21": "bucket21",
+        "bucket22": "bucket22",
+        "bucket23": "bucket23",
+        "bucket24": "bucket24",
+        "bucket25": "bucket25",
+        "fallback": "fallback"
+      },
+      "defaultVariant": "fallback",
+      "targeting": {
+        "fractional": [
+          { "var": "hashing_input" },
+          [ "bucket1", 4 ],
+          [ "bucket2", 4 ],
+          [ "bucket3", 4 ],
+          [ "bucket4", 4 ],
+          [ "bucket5", 4 ],
+          [ "bucket6", 4 ],
+          [ "bucket7", 4 ],
+          [ "bucket8", 4 ],
+          [ "bucket9", 4 ],
+          [ "bucket10", 4 ],
+          [ "bucket11", 4 ],
+          [ "bucket12", 4 ],
+          [ "bucket13", 4 ],
+          [ "bucket14", 4 ],
+          [ "bucket15", 4 ],
+          [ "bucket16", 4 ],
+          [ "bucket17", 4 ],
+          [ "bucket18", 4 ],
+          [ "bucket19", 4 ],
+          [ "bucket20", 4 ],
+          [ "bucket21", 4 ],
+          [ "bucket22", 4 ],
+          [ "bucket23", 4 ],
+          [ "bucket24", 4 ],
+          [ "bucket25", 4 ]
+        ]
+      }
+    },
+    "targeting-null-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "one": 1,
+        "two": 2
+      },
+      "defaultVariant": "two",
+      "targeting": {
+        "fractional": [
+          null,
+          [ "one" ]
+        ]
+      }
+    },
+    "targeting-null-variant-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "one": 1,
+        "two": 2
+      },
+      "defaultVariant": "two",
+      "targeting": {
+        "if": [true, null, "one"]
+      }
+    },
+    "error-targeting-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "one": 1,
+        "two": 2
+      },
+      "defaultVariant": "two",
+      "targeting": {
+        "invalid": ["this is not valid targeting"]
+      }
+    },
+    "missing-variant-targeting-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "one": 1,
+        "two": 2
+      },
+      "defaultVariant": "two",
+      "targeting": {
+        "if": [true, "three", "one"]
+      }
+    },
+    "non-string-variant-targeting-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "false": 1,
+        "true": 2
+      },
+      "defaultVariant": "false",
+      "targeting": {
+        "if": [true, true, false]
+      }
+    },
+    "empty-targeting-flag": {
+      "state": "ENABLED",
+      "variants": {
+        "false": 1,
+        "true": 2
+      },
+      "defaultVariant": "false",
+      "targeting": {}
     }
   },
   "$evaluators": {
